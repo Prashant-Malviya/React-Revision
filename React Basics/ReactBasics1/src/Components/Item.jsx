@@ -1,10 +1,11 @@
 import React from 'react'
 import './Item.css'
 
-function Item({name}) {
+function Item(props) {
   return (
     <div>
-      {name}
+      {props.name} 
+      <span> {props.children}</span>
     </div>
   )
 }
